@@ -1,16 +1,10 @@
-# fcm_send_token_generate
+# Firebase messaging auth token generate
 
 A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project allows you to generate an authorization token for Firebase Messaging using a JSON file from your Firebase service account.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="728" alt="Screenshot 2024-07-12 at 09 59 49" src="https://github.com/user-attachments/assets/0ea443c0-812b-4807-91f0-2194b6b328e6">
+<img width="729" alt="Screenshot 2024-07-12 at 09 58 09" src="https://github.com/user-attachments/assets/7bddbd46-dc95-42ea-aa09-3080cedd4979">
