@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       dark: AppTheme.darkTheme,
       builder: (light, dark) {
         return MaterialApp(
-          title: 'Flutter Demo',
+          title: 'Json to Token',
           debugShowCheckedModeBanner: false,
           theme: light,
           darkTheme: dark,
