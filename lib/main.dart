@@ -1,3 +1,5 @@
+import 'package:adaptive_theme/adaptive_theme.dart';
+import 'package:fcm_send_token_generate/core/theme/theme.dart';
 import 'package:fcm_send_token_generate/feature/home/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -10,14 +12,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        useMaterial3: true,
-      ),
-      home: const HomePage(),
+    return AdaptiveTheme(
+      light: AppTheme.lightTheme,
+      dark: AppTheme.darkTheme,
+      builder: (light, dark) {
+        return MaterialApp(
+          title: 'Flutter Demo',
+          debugShowCheckedModeBanner: false,
+          theme: light,
+          darkTheme: dark,
+          home: const HomePage(),
+        );
+      },
+      initial: AdaptiveThemeMode.light,
     );
   }
 }
